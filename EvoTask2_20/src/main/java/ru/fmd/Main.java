@@ -22,7 +22,8 @@ public class Main {
         System.out.println();
 
         for (Integer i : frequency.keySet()) {
-            System.out.printf("Число '%d' встречается %d раз\n", i, frequency.get(i));
+            if(frequency.get(i) > 1)
+                System.out.printf("Число '%d' встречается %d раз\n", i, frequency.get(i));
         }
     }
 }
